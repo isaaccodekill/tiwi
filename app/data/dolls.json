@@ -3,25 +3,26 @@
       "id": 1,
       "name": "IT GIRL TWIRL FIT",
       "price": 41400,
-      "image": "https://raw.githubusercontent.com/isaaccodekill/tiwi/main/imgs/IMG_7909.PNG",
+      "image": "https://res.cloudinary.com/isaaccloud/image/upload/v1709110543/IMG_7909_bxy3b0.png",
       "sub_images": [
-        "https://raw.githubusercontent.com/isaaccodekill/tiwi/main/imgs/IMG_7919.PNG",
-        "https://raw.githubusercontent.com/isaaccodekill/tiwi/main/imgs/IMG_7920.PNG",
-        "https://raw.githubusercontent.com/isaaccodekill/tiwi/main/imgs/IMG_7922.PNG",
-        "https://raw.githubusercontent.com/isaaccodekill/tiwi/main/imgs/IMG_7923.PNG",
-        "https://raw.githubusercontent.com/isaaccodekill/tiwi/main/imgs/IMG_7926.PNG"
+        "https://res.cloudinary.com/isaaccloud/image/upload/v1709110543/IMG_7909_bxy3b0.png",
+        "https://res.cloudinary.com/isaaccloud/image/upload/v1709110540/IMG_7919_cawm0z.png",
+        "https://res.cloudinary.com/isaaccloud/image/upload/v1709110540/IMG_7923_enssa2.png",
+        "https://res.cloudinary.com/isaaccloud/image/upload/v1709110538/IMG_7920_hr1ezb.png",
+        "https://res.cloudinary.com/isaaccloud/image/upload/v1709110536/IMG_7922_zlao05.png",
+        "https://res.cloudinary.com/isaaccloud/image/upload/v1709110535/IMG_7926_wj6plh.png"
       ],
       "description": "Get a Tiwi in the IT Girl Twirl Fit. Super cute just like you. Each doll  includes fun items of outfits to par.",
       "description2": "Collectors and new Tiwi doll fans celebrate the IT GIRL TWIRL  look with this original pience."
     },
     {
         "id": 2,
-        "name": "Hello Yellow",
+        "name": "HELLO YELLOW FIT",
         "price": 41400,
-        "image": "https://raw.githubusercontent.com/isaaccodekill/tiwi/main/imgs/IMG_7908.PNG",
+        "image": "https://res.cloudinary.com/isaaccloud/image/upload/v1709110539/IMG_7908_m9a6t4.png",
     "sub_images": [
-
-           "https://raw.githubusercontent.com/isaaccodekill/tiwi/main/imgs/IMG_7927.PNG"
+      "https://res.cloudinary.com/isaaccloud/image/upload/v1709110539/IMG_7908_m9a6t4.png",
+      "https://res.cloudinary.com/isaaccloud/image/upload/v1709110535/IMG_7927_p68zzu.png"
             ],
         "description": "Get a Tiwi in the Hello Yellow. Shes shines like the sun. Each doll  includes fun items of outfits to par.",
         "description2": "Collectors and new Tiwi doll fans celebrate the Hello Yellow look with this original pience."

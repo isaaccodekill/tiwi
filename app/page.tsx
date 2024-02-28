@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "antd";
 import DollData from "./data/dolls.json";
 import {formatCurrency} from "@/app/utils/utils";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,12 +18,12 @@ export default function Home() {
                     priority
                 />
                 <div className="flex items-center gap-8">
-                    <a href="/#shop">
+                    <Link href="/#shop">
                         <Button type="default" shape="round" className="w-40 !bg-blue-100 text-white" size="large"> Shop </Button>
-                    </a>
-                    <a href="/cart" className="text-blue-100 hover:border-b-2 border-solid">
-                        <span>Cart</span>
-                    </a>
+                    </Link>
+                    <Link href="/cart" className="text-blue-100 hover:border-b-2 hover:border-blue-100 border-solid">
+                        <span className="font-sans">Cart</span>
+                    </Link>
                 </div>
             </div>
             <div className="flex flex-grow flex-col items-center justify-between items-center gap-2 mt-20 sm:mt-5">
@@ -37,7 +38,7 @@ export default function Home() {
                         Meet Your Mini-Me
                     </h1>
                     <h2 className="text-2xl font-sans text-pink-100 font-bold text-center">
-                        Your Teenie Weenie Little Twin
+                        Your Teenie Weenie Twin
                     </h2>
                 </div>
                     <Image
@@ -60,17 +61,17 @@ export default function Home() {
             <h3 className="text-2xl mt-10 font-serif text-black font-bold text-center">Get your own Tiwi today!</h3>
             <div className="grid gap-10 grid-cols-1 sm:grid-cols-2">
                 { DollData.map((doll) => (
-                    <a key={doll.id} href={`/shop/${doll.id}`}>
+                    <Link key={doll.id} href={`/shop/${doll.id}`} className="group">
                         <div key={doll.id} className="flex flex-col items-center gap-2">
                             <img
-                                className="h-[560px] object-top"
+                                className="h-[560px] object-top group-hover:scale-125 duration-300"
                                 src={doll.image}
                                 alt={doll.name}
                             />
                             <p className="text-2xl font-serif text-black font-bold ">{doll.name}</p>
-                            <span> {formatCurrency(doll.price)} </span>
+                            <span className="font-sans"> {formatCurrency(doll.price)} </span>
                         </div>
-                    </a>
+                    </Link>
                 )
                 ) }
             </div>

@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["Quicksand", "sans-serif"],
-        serif: ["Cocogoose", "serif"],
+        serif: ['var(--font-cocogoose)'],
       },
       colors: {
         blue: {

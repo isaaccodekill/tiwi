@@ -37,6 +37,7 @@
 
 html{
   font-family: "Cocogoose", serif;
+  scroll-behavior: smooth;
 }
 
 
