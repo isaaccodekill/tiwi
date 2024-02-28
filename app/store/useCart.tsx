@@ -1,3 +1,6 @@
+// @ts-nocheck
+// @ts-ignore
+
 import React, { createContext, useContext, useReducer, useEffect } from 'react';
 
 // Define cart context
@@ -7,7 +10,6 @@ const CartContext = createContext();
 const cartReducer = (state, action) => {
     switch (action.type) {
         case 'ADD_ITEM':
-            console.log(action.payload.id, action.payload.amount, "we deci")
             return { ...state, [action.payload.id]: (state[action.payload.id] || 0) + action.payload.amount };
         case 'REMOVE_ITEM':
             const updatedState = { ...state };

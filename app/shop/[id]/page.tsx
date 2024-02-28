@@ -98,9 +98,9 @@ export default function Page({ params }: { params: { id: string } }) {
             <div className="flex flex-grow pt-10 ">
 
                     <div className="flex flex-col gap-10">
-                        {doll && (doll.sub_images.map(img => (
+                        {doll && (doll.sub_images.map((img, ind) => (
                             <img
-                                key={img}
+                                key={ind}
                                 id={img}
                                 src={img}
                                 alt={doll?.name}
