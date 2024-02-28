@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+      "name": "It girl twirl fit",
+      "price": 41400,
+      "image": "https://ibb.co/wpcs0KV",
+      "sub_images": [
+        "https://ibb.co/2yYGfbR",
+        "https://ibb.co/zN3TZVd",
+        "https://ibb.co/9yf6mWW",
+        "https://ibb.co/WfNXzn1",
+        "https://ibb.co/gPzRCRh"
+      ],
+      "description": "Get a Tiwi in the IT Girl Twirl Fit. Super cute just like you. Each doll  includes fun items of outfits to par.",
+      "description2": "Collectors and new Tiwi doll fans celebrate the IT GIRL TWIRL  look with this original pience."
+    },
+    {
+        "id": 2,
+        "name": "Hello Yellow",
+        "price": 41400,
+        "image": "https://ibb.co/jWhLzt8",
+    "sub_images": [
+
+            "https://ibb.co/6PH7Pz2"
+            ],
+        "description": "Get a Tiwi in the Hello Yellow. Shes shines like the sun. Each doll  includes fun items of outfits to par.",
+        "description2": "Collectors and new Tiwi doll fans celebrate the Hello Yellow look with this original pience."
+    }
+]
