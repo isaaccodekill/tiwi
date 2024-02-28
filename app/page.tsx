@@ -6,7 +6,7 @@ import {formatCurrency} from "@/app/utils/utils";
 export default function Home() {
   return (
     <main className="min-h-screen">
-        <section className="p-12 min-h-screen sm:px-24 sm:pt-10  flex flex-col pb-0 bg-yellow-100">
+        <section className="p-12 min-h-screen sm:px-10 sm:pt-10  flex flex-col pb-0 bg-yellow-100">
             <div className="relative flex justify-between w-full">
                 <Image
                     className="relative"
@@ -63,7 +63,7 @@ export default function Home() {
                     <a key={doll.id} href={`/shop/${doll.id}`}>
                         <div key={doll.id} className="flex flex-col items-center gap-2">
                             <img
-                                className="w-60 object-top"
+                                className="h-[560px] object-top"
                                 src={doll.image}
                                 alt={doll.name}
                             />
