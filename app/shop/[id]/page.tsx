@@ -3,6 +3,7 @@ import {Button} from "antd";
 import Image from "next/image";
 import PlusIcon from "../../assets/images/plus.svg";
 import MinusIcon from "../../assets/images/minus.svg";
+import {formatCurrency} from "@/app/utils/utils";
 
 export default function Page({ params }: { params: { id: string } }) {
 
@@ -50,32 +51,33 @@ const doll = Dolldata.find((doll) => doll.id.toString() === params.id);
                         className={`h-[620px] sm:ml-20 object-top object-cover`}
                     />
                 </div>
-                <div className="flex shrink flex-col justify-center sm:w-[500px]">
+                <div className="flex shrink flex-col justify-start sm:w-[500px]">
                     <span className="">Tiwi doll</span>
-                    <h1 className="font-serif text-4xl"> {doll?.name} </h1>
-                    <p className="text-2xl"> {doll?.price} </p>
+                    <h1 className="font-serif text-4xl mb-10"> {doll?.name} </h1>
+                    <p className="text-2xl mb-10 font-serif !font-light"> { formatCurrency(doll?.price) } </p>
 
-                    <div className="flex border border-b-2 items-center gap-4 h-10 w-100 p-10 justify-between">
+                    <span> Quantity </span>
+                    <div className="flex px-5 border border-b-2 items-center gap-4 h-10 w-[200px] p-1 justify-between">
                         <Image
                             src={MinusIcon}
                             alt="My SVG"
-                            width={20}
-                            height={20}
+                            width={15}
+                            height={15}
                         />
-                        <span>Quantity</span>
+                        <span>1</span>
                         <Image
                             src={PlusIcon}
                             alt="My SVG"
-                            width={20}
-                            height={20}
+                            width={15}
+                            height={15}
                         />
 
                     </div>
 
-                    <Button type="default" size="large" className="bg-yellow-200 text-center text-black !rounded-none !border-0">
+                    <Button type="default" size="large" className="bg-yellow-200 mb-[20px] mt-[60px] text-center text-black !rounded-none !border-0">
                         ADD TO CART
                     </Button>
-                    <p className="text-2xl"> {doll?.description} </p>
+                    <p className=""> {doll?.description} </p>
                     <p> {doll?. description2} </p>
                 </div>
             </div>

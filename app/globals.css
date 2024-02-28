@@ -1,12 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+  font-family: 'Cocogoose-Pro-Bold-Italic';
+  src: url('./assets/fonts/cocogoose/Cocogoose-Pro-Bold-Italic-trial.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cocogoose-Pro-Bold';
+  src: url('./assets/fonts/cocogoose/Cocogoose-Pro-Bold-trial.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cocogoose-Pro-Light';
+  src: url('./assets/fonts/cocogoose/Cocogoose-Pro-Light-trial.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cocogoose-Pro-Regular";
+  src: url("./assets/fonts/cocogoose/Cocogoose-Pro-Regular-trial.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html{
-  font-family: 'Cocogoose", sans-serif', serif;
+  font-family: "Cocogoose", serif;
 }
 
 
