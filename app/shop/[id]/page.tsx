@@ -7,13 +7,16 @@ import PlusIcon from "../../assets/images/plus.svg";
 import MinusIcon from "../../assets/images/minus.svg";
 import {formatCurrency} from "@/app/utils/utils";
 import {useCart} from "@/app/store/useCart";
-import {router} from "next/client";
+
 import Link from "next/link";
+import {useRouter} from "next/navigation";
 
 
 type NotificationType = 'success' | 'info' | 'warning' | 'error';
 
 export default function Page({ params }: { params: { id: string } }) {
+
+    const router = useRouter();
 
     const doll = Dolldata.find((doll) => doll.id.toString() === params.id);
 
@@ -43,15 +46,13 @@ export default function Page({ params }: { params: { id: string } }) {
 
 
     const addToCart = () => {
-        console.log(dollCount, cart)
         if(dollCount > 0){
             addItem(params.id, dollCount);
+            router.push('/cart');
+
         }
     }
 
-    useEffect(() => {
-        openNotificationWithIcon('success')
-    }, [cart, dollCount])
 
 
 
@@ -124,7 +125,7 @@ export default function Page({ params }: { params: { id: string } }) {
                                 height={15}
                             />
                         </button>
-                        <span> { dollCount  } </span>
+                        <span className="font-sans"> { dollCount  } </span>
                         <button onClick={incrementDollCount}>
                             <Image
                                 src={PlusIcon}

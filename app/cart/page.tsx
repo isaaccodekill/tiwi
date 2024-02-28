@@ -71,7 +71,7 @@ export default function Page() {
                                 />
                                 <div>
                                     <h1 className="text-2xl font-serif text-black font-bold">{item.doll?.name}</h1>
-                                    <p className="text-lg font-sans text-black font-light">{item.doll?.price && formatCurrency(item.doll?.price )}</p>
+                                    <p className="text-lg font-sans text-black font-light">{item.doll?.price && formatCurrency(item.doll?.price * item.amount )}</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-8">
