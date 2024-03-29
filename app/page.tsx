@@ -52,7 +52,7 @@ export default function Home() {
                     />
             </div>
         </section>
-        <section id="video" className="p-12 min-h-screen sm:px-10 sm:pt-10  flex flex-col pb-0 bg-white">
+        <section id="video" className="p-12 md:min-h-screen sm:px-10 sm:pt-10  flex flex-col pb-0 bg-white">
             <div className="flex justify-center mt-10 mb-16">
                 <Image
                     src="/hi.png"
@@ -61,11 +61,11 @@ export default function Home() {
                     height={100}
                 />
             </div>
-            <div className="rounded-2xl mx-auto border-black border-2 w-[70%] overflow-hidden">
+            <div className="rounded-2xl mx-auto border-black border-2 w-[100%] md:w-[80%] overflow-hidden">
                 <video src="/tiwi.mp4" playsInline controls />
             </div>
         </section>
-        <section id="shop"  className="min-h-screen bg-white p-12 min-h-screen sm:px-24 sm:pt-12 ">
+        <section id="shop"  className="bg-white p-12 min-h-screen sm:px-24 sm:pt-12 ">
             <h3 className="text-2xl mt-10 font-serif text-black font-bold text-center">Get your own Tiwi today!</h3>
             <div className="grid gap-10 grid-cols-1 sm:grid-cols-2">
                 { DollData.map((doll) => (
