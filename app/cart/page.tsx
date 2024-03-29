@@ -29,15 +29,16 @@ export default function Page() {
                         shop
                     </Button>
                 </Link>
-
-                <Image
-                    className="relative"
-                    src="/tiwi_logo.png"
-                    alt="tiwi logo"
-                    width={100}
-                    height={37}
-                    priority
-                />
+                <Link href="/">
+                    <Image
+                        className="relative"
+                        src="/tiwi_logo.png"
+                        alt="tiwi logo"
+                        width={100}
+                        height={37}
+                        priority
+                    />
+                </Link>
                 <div/>
             </div>
 

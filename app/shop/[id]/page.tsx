@@ -67,16 +67,16 @@ export default function Page({ params }: { params: { id: string } }) {
                     shop
                 </Button>
                 </Link>
-
-                <Image
-                    className="relative"
-                    src="/tiwi_logo.png"
-                    alt="tiwi logo"
-                    width={100}
-                    height={37}
-                    priority
-                />
-
+                <Link href="/">
+                    <Image
+                        className="relative"
+                        src="/tiwi_logo.png"
+                        alt="tiwi logo"
+                        width={100}
+                        height={37}
+                        priority
+                    />
+                </Link>
                 <div className="flex items-center gap-8">
                     <Link href="/cart" className="text-blue-100 font-sans hover:border-b-2 border-solid">
                         <span>Cart</span>
