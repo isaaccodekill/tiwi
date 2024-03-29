@@ -1,7 +1,5 @@
 'use client';
 
-import type { Metadata } from "next";
-import { Inter, } from "next/font/google";
 import "./globals.css";
 import {CartProvider} from "@/app/store/useCart";
 import {notification as antdNotification} from "antd";
